@@ -1,0 +1,55 @@
+{
+  "name": "use-sync-state",
+  "version": "1.0.0",
+  "license": "MIT",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "description": "React hook that syncs state between browsing contexts",
+  "author": "Pedro Escumalha",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroescumalha/use-sync-state.git"
+  },
+  "homepage": "https://github.com/pedroescumalha/use-sync-state",
+  "bugs": "https://github.com/pedroescumalha/use-sync-state/issues",
+  "keywords": [
+    "react",
+    "typescript",
+    "typesafe",
+    "hook",
+    "useState",
+    "type",
+    "safety"
+  ],
+  "scripts": {
+    "format": "prettier ./src --check",
+    "format:write": "prettier ./src --write",
+    "bundle": "rollup -c --bundleConfigAsCjs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "rollup": "^4.18.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
+}
