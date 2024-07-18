@@ -24,7 +24,8 @@
   "scripts": {
     "format": "prettier ./src --check",
     "format:write": "prettier ./src --write",
-    "bundle": "rollup -c --bundleConfigAsCjs"
+    "bundle": "rollup -c --bundleConfigAsCjs",
+    "build": "tsc -b"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
