@@ -1,6 +1,6 @@
 # Overview
 
-The `use-sync-state` library is a library designed to facilitate state synchronization between different browsing contexts using the `BrowsingChannel` Web API and React's `useState` hook. This library provides an easy-to-use React hook, `useSyncState`, ensuring your application's state remains consistent across multiple tabs or windows, enhancing the user experience by maintaining a seamless state management system.
+The `use-sync-state` library is a library designed to facilitate state synchronization between different browsing contexts. This library provides an easy-to-use React hook, `useSyncState`, ensuring your application's state remains consistent across multiple tabs or windows, enhancing the user experience by maintaining a seamless state management system.
 
 # Features
 
@@ -38,7 +38,7 @@ import React from 'react';
 import { useSyncState } from 'use-sync-state';
 
 const App: React.FC = () => {
-  const [count, setCount] = useSyncState(0, 'counter');
+  const [count, setCount] = useSyncState('counter', 0);
 
   const increment = () => {
     setCount((prevCount) => prevCount + 1);
@@ -59,8 +59,8 @@ export default App;
 
 The `useSyncState` hook takes two parameters:
 
-- **initialState**: A variable representing the initial state value.
 - **channelKey**: A string representing the name of the browsing channel. This ensures that only contexts with the same channel name will sync state. Ensure `channelKey` is unique to avoid conflicts with other instances using the same name.
+- **initialState**: A variable representing the initial state value.
 
 # License
 

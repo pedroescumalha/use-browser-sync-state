@@ -10,7 +10,7 @@ function createBroadcastChannel<T>(key: string, onStateChange: (state: T) => voi
   return channel;
 }
 
-export function useSyncState<T>(initialValue: T, channelKey: string): [T, Dispatch<SetStateAction<T>>] {
+export function useSyncState<T>(channelKey: string, initialValue: T): [T, Dispatch<SetStateAction<T>>] {
   const [internalState, setInternalState] = useState<T>(initialValue);
   const broadcastChannel = useRef(createBroadcastChannel(channelKey, setInternalState));
 
