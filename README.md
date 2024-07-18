@@ -1,6 +1,6 @@
 # Overview
 
-The `use-sync-state` library is a library designed to facilitate state synchronization between different browsing contexts. This library provides an easy-to-use React hook, `useSyncState`, ensuring your application's state remains consistent across multiple tabs or windows, enhancing the user experience by maintaining a seamless state management system.
+The `use-browser-sync-state` library is a library designed to facilitate state synchronization between different browsing contexts. This library provides an easy-to-use React hook, `useSyncState`, ensuring your application's state remains consistent across multiple tabs or windows, enhancing the user experience by maintaining a seamless state management system.
 
 # Features
 
@@ -11,22 +11,22 @@ The `use-sync-state` library is a library designed to facilitate state synchroni
 
 # Installation
 
-To install the `use-sync-state` library, use npm or yarn:
+To install the `use-browser-sync-state` library, use npm or yarn:
 
 ```bash
-npm install use-sync-state
+npm install use-browser-sync-state
 ```
 
 # Usage
 
-To use the `use-sync-state` library in your React application, follow these steps:
+To use the `use-browser-sync-state` library in your React application, follow these steps:
 
 ## 1. Import the Hook
 
 Import the `useSyncState` hook from the library:
 
 ```typescript
-import { useSyncState } from 'use-sync-state';
+import { useSyncState } from 'use-browser-sync-state';
 ```
 
 ## 2. Initialize the Hook
@@ -35,7 +35,7 @@ Use the `useSyncState` hook in your functional component to create a synchronize
 
 ```typescript
 import React from 'react';
-import { useSyncState } from 'use-sync-state';
+import { useSyncState } from 'use-browser-sync-state';
 
 const App: React.FC = () => {
   const [count, setCount] = useSyncState('counter', 0);
@@ -68,4 +68,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Enjoy seamless state synchronization with the `use-sync-state` library! If you have any questions or need further assistance, feel free to open an issue on our GitHub repository.
+Enjoy seamless state synchronization with the `use-browser-sync-state` library! If you have any questions or need further assistance, feel free to open an issue on our GitHub repository.
