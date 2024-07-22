@@ -9,6 +9,13 @@ The `use-browser-sync-state` library is a library designed to facilitate state s
 - **TypeScript Support:** Fully typed for improved development experience and type safety.
 - **Lightweight:** Minimal footprint, focusing solely on state synchronization.
 
+# Benefits
+
+- **Consistency:** Ensures that users have a consistent experience regardless of how many tabs or windows they have open.
+- **User Experience:** Enhances the user experience by preventing data loss and redundant actions.
+- **Efficiency:** Reduces the need for users to manually sync data across tabs.
+- **Real-Time Updates:** Keeps all instances of the application up-to-date with the latest data.
+
 # Installation
 
 To install the `use-browser-sync-state` library, use npm or yarn:
