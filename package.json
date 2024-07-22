@@ -1,6 +1,6 @@
 {
   "name": "use-browser-sync-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -8,10 +8,10 @@
   "author": "Pedro Escumalha",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pedroescumalha/use-sync-state.git"
+    "url": "git+https://github.com/pedroescumalha/use-browser-sync-state.git"
   },
-  "homepage": "https://github.com/pedroescumalha/use-sync-state",
-  "bugs": "https://github.com/pedroescumalha/use-sync-state/issues",
+  "homepage": "https://github.com/pedroescumalha/use-browser-sync-state",
+  "bugs": "https://github.com/pedroescumalha/use-browser-sync-state/issues",
   "keywords": [
     "react",
     "typescript",
