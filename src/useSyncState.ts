@@ -15,10 +15,6 @@ export function useSyncState<T>(channelKey: string, initialValue: T): [T, Dispat
   const broadcastChannel = useRef(createBroadcastChannel(channelKey, setInternalState));
 
   useEffect(() => {
-    broadcastChannel.current.postMessage(internalState);
-  }, [internalState]);
-
-  useEffect(() => {
     () => {
       broadcastChannel.current.close();
     };
